@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Guillon Demi";
+  src: url("Guillon-Demi.03e9c00c.woff2") format("woff2"), url("Guillon-Demi.debf7c0a.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Guillon";
+  src: url("Guillon-Bold.89a4c62b.woff2") format("woff2"), url("Guillon-Bold.10fea951.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Guillon";
+  src: url("Guillon-Black.fcba1d5b.woff2") format("woff2"), url("Guillon-Black.ac2113a1.woff") format("woff");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
+.guillon-130-700 {
+  font-family: "Guillon";
+  font-size: 130px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 100%;
+  letter-spacing: 3px;
+}
+@media screen and (max-width: 650px) {
+  .guillon-130-700 {
+    font-size: 65px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .guillon-130-700 {
+    font-size: 45px;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body {
+  background: #87c7bb;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+.container {
+  padding: 0 80px;
+}
+@media screen and (max-width: 1440px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+.word-carousel {
+  overflow: hidden;
+  position: relative;
+  height: 150px;
+  margin: 80vh 0 60vh;
+}
+@media screen and (max-width: 767px) {
+  .word-carousel {
+    height: 350px;
+  }
+}
+.wc_slider {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  top: 0;
+  left: 0;
+}
+.wc_slide {
+  position: relative;
+  text-transform: uppercase;
+  margin: 0 115px 0 145px;
+  color: transparent;
+  -webkit-text-stroke: 2px #000;
+}
+@media screen and (max-width: 767px) {
+  .wc_slide {
+    margin: 0 90px 0 120px;
+    -webkit-text-stroke: 1px #000;
+  }
+}
+.wc_slide::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  left: -145px;
+  width: 50px;
+  height: 10px;
+  background: transparent;
+  border: 2px solid #000;
+}
+@media screen and (max-width: 767px) {
+  .wc_slide::before {
+    height: 10px;
+    width: 40px;
+    left: -120px;
+    border: 1px solid #000;
+  }
+}
+@media screen and (max-width: 650px) {
+  .wc_slide::before {
+    height: 5px;
+    width: 30px;
+  }
+}
+/*# sourceMappingURL=index.7268c736.css.map */
